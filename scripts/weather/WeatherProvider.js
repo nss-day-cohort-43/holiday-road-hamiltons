@@ -5,7 +5,7 @@ export const useWeather = () => {
 };
 
 export const getWeather = () => {
-    return fetch("")
+    return fetch("https://openweathermap.org/api")
         .then(response => response.json())
         .then(parsedWeather => {
             // console.table(parsedCriminals)
