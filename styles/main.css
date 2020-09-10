@@ -1,36 +1,62 @@
 
+ /* header {
+        background-color: white;
+        width: 900px;
+        height: 50px;
+ } */
 
-main {
-    
-}
+
+/* .bannerImg {
+        background-color: white;
+} */
+
+/* main {
+        border: solid green 1px;
+        position: absolute;
+        width: 900px;
+        height: 486px;
+        background: #F2F2F2;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+} */
+                
 
 
-h1 {
+/* .dropdownTitle {
+        text-align: center;
+} */
 
-};
+/* .dropdownContainer {
+        background-color: purple;
+        width: 900px;
+        height: 50px;
+        text-align: center;
+} */
 
-        /* MAIN IMAGE */
-.bannerImg {
+/* .mainContentContainer {
+        position: absolute;
+        width: 900px;
+        height: 486px;
+        background: #F2F2F2;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+} */
 
-};
+/* .previewContainer {
+        position: absolute;
+        width: 283px;
+        height: 428px;
+        background: rgba(83, 173, 187, 0.6);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+} */
 
-        /* DROPDOWN */
+/* #savedAdventuresContainer {
+        border: solid black 1px;
+        position: absolute;
+        width: 283px;
+        height: 428px;
+        background: rgba(83, 173, 187, 0.6);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+} */
 
-.dropdown {
-
-};
-
-        /* PREVIEW SECTION */
-
-.preview {
-
-};
-
-        /* ASIDE */
-
-.savedAdventures {
-     
-}
 
 
 
