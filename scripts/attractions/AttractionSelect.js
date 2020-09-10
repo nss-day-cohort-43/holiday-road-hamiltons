@@ -4,7 +4,7 @@ import { useAttractions, getAttractions } from "./AttractionProvider.js"
 const eventHub = document.querySelector(".dropdown")
 const domElement = document.querySelector(".attractionsDrop")
 
-eventHub,addEventListener("change", e => {
+eventHub.addEventListener("change", e => {
     if (e.target.id === "selectAttraction") {
         const customEvent = new CustomEvent ("attractionSelected", {
             detail: {
@@ -17,12 +17,11 @@ eventHub,addEventListener("change", e => {
 
 const render = (attractionCollection) =>{
 
-
-domElement.innerHTML = `
+    domElement.innerHTML = `
     <select class="dropdown" id="attractionSelect">
         <option value="0">Select an Attraction</option>
         ${attractionCollection.map(attractionObj => {
-            return`<option value="${attractionObj.name}>${attractionObj.name}</option>`
+            return`<option value="${attractionObj.name}">${attractionObj.name}</option>`
         }).join("")
     }
         </select>
@@ -33,6 +32,7 @@ domElement.innerHTML = `
         getAttractions()
         .then( () =>{
             const attractionList = useAttractions()
+            console.log(attractionList)
             render(attractionList)
         })
     }
