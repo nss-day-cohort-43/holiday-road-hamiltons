@@ -22,7 +22,7 @@ domElement.innerHTML = `
     <select class="dropdown" id="attractionSelect">
         <option value="0">Select an Attraction</option>
         ${attractionCollection.map(attractionObj => {
-            return`<option value="${attractionObj.name}>${attractionObj.name}</option>`
+            return`<option value="${attractionObj.name}">${attractionObj.name}</option>`
         }).join("")
     }
         </select>

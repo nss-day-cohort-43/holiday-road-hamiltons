@@ -21,7 +21,7 @@ const render = (eateryCollection) =>{
         <select class="dropdown" id="eaterySelect">
         <option value="0">Select an Eatery</option>
         ${eateryCollection.map(eateryObj => {
-            return`<option value="${eateryObj.businessName}>${eateryObj.businessName}</option>`
+            return`<option value="${eateryObj.businessName}">${eateryObj.businessName}</option>`
         }).join("")
         }
         </select>
