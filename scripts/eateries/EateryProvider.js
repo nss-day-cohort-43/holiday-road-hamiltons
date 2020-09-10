@@ -1,15 +1,15 @@
 let eateries = [];
 
-export const useEatery = () => {
+export const useEateries = () => {
     return eateries.slice();
 };
 
 export const getEateries = () => {
-    return fetch("")
+    return fetch("http://holidayroad.nss.team/eateries")
         .then(response => response.json())
         .then(parsedEateries => {
-            // console.table(parsedCriminals)
+            console.table(parsedEateries)
             eateries = parsedEateries
         }
     )
-};
+}
