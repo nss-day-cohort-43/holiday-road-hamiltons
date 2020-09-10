@@ -5,11 +5,10 @@ export const useAttractions = () => {
 };
 
 export const getAttractions = () => {
-    return fetch("")
+    return fetch("http://holidayroad.nss.team/bizarreries")
         .then(response => response.json())
         .then(parsedAttractions => {
-            // console.table(parsedCriminals)
             attractions = parsedAttractions
         }
     )
-};
+}
