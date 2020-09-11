@@ -1,4 +1,5 @@
-// Array of states
+
+//array for states drop down
 
 let states = [
     "Alabama",
@@ -52,3 +53,7 @@ let states = [
     "Wisconsin",
     "Wyoming"
 ]
+
+export const theStates = () => {
+    return states.slice();
+}

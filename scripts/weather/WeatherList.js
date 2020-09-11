@@ -1,14 +1,14 @@
 import { getWeather, useWeather } from "./WeatherProvider.js";
 import { WeatherHTML } from "./Weather.js";
 
-const eventHub = document.querySelector(".weatherContainer");
+const eventHub = document.querySelector(".weatherPreview");
 eventHub.addEventListener("chosen", event => {
     const zipCode = event.detail.parkZip;
     weatherList(zipCode);
 });
 
 const render = (appWeather) => {
-    const targetElement = document.querySelector(".weatherContainer");
+    const targetElement = document.querySelector(".weatherPreview");
 
     let HTMLArray = appWeather.map(weatherObj => {
         return WeatherHTML(weatherObj);
