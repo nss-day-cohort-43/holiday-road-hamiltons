@@ -4,8 +4,6 @@ import {getParks,useParks} from './parks/ParkProvider.js'
 import {ParkSelect} from './parks/ParksSelect.js'
 import {weatherList} from './weather/WeatherList.js'
 
-console.log("I'm a dingus")
-
 eaterySelection();
 attractionsSelection();
 getParks();
