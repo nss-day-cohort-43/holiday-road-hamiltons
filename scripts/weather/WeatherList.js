@@ -13,7 +13,7 @@ const render = (appWeather) => {
     let HTMLArray = appWeather.map(weatherObj => {
         return WeatherHTML(weatherObj);
     })
-    // console.log("HTMLArray", HTMLArray);
+    
     targetElement.innerHTML = HTMLArray.join("");
 };
 
@@ -22,7 +22,7 @@ export const weatherList = (zipCode) => {
     getWeather(zipCode)
         .then(() => {
             const weatherArray = useWeather();
-            //console.log('weatherArray', weatherArray);
+            
             render(weatherArray);
         })
 };

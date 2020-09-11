@@ -5,7 +5,7 @@ const render = (notes) => {
    let HTMLArray = notes.map((noteObj) => {
         return NoteHTMLConverter(noteObj);
    })
-   console.log("HTMLArray", HTMLArray);
+   
     contentTarget.innerHTML = HTMLArray.join("")
    };
 
