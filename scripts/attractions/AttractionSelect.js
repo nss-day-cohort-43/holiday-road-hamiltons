@@ -1,7 +1,7 @@
 //house the event listener function and the drop down menu for the Attraction API
 import { useAttractions, getAttractions } from "./AttractionProvider.js"
 
-const eventHub = document.querySelector(".dropdown")
+const eventHub = document.querySelector(".dropdownContainer")
 const domElement = document.querySelector(".attractionsDrop")
 
 eventHub.addEventListener("change", e => {
@@ -32,7 +32,6 @@ const render = (attractionCollection) =>{
         getAttractions()
         .then( () =>{
             const attractionList = useAttractions()
-            console.log(attractionList)
             render(attractionList)
         })
     }
