@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useWeather, getWeather } from "./WeatherProvider.js"
 import { weatherHTML } from "./Weather.js"
 
@@ -25,6 +26,28 @@ export const weatherPrev = (zipCode) => {
         render(fiveDay)
         })
 }
+=======
+import { getWeather, useWeather } from "./WeatherProvider.js";
+import { WeatherHTML } from "./Weather.js";
+
+const eventHub = document.querySelector(".weatherContainer");
+eventHub.addEventListener("chosen", event => {
+    const zipCode = event.detail.parkZip;
+    weatherList(zipCode);
+});
+
+const render = (appWeather) => {
+    const targetElement = document.querySelector(".weatherContainer");
+
+    let HTMLArray = appWeather.map(weatherObj => {
+        return WeatherHTML(weatherObj);
+    })
+    // console.log("HTMLArray", HTMLArray);
+    targetElement.innerHTML = HTMLArray.join("");
+};
+
+// Render weather forcast initally
+>>>>>>> master
 export const weatherList = (zipCode) => {
     getWeather(zipCode)
         .then(() => {
@@ -34,6 +57,7 @@ export const weatherList = (zipCode) => {
         })
 };
 
+<<<<<<< HEAD
 
 
 
@@ -44,3 +68,17 @@ const render = (aDayTacoArray) => {
     })
     contentTarget.innerHTML += HTMLArray.join("");
 } 
+=======
+eventHub.addEventListener("click", clickEvent => {
+    if (clickEvent.target.id === "saveWeather") {
+
+        const weatherContent = document.querySelector(".weatherContainer")
+
+        if (weatherContent.value !== "0") {
+            const newforcast = {
+
+            }
+        }
+    }
+});
+>>>>>>> master
