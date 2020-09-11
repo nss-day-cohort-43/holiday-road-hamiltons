@@ -2,6 +2,10 @@ import { getWeather, useWeather } from "./WeatherProvider.js";
 import { WeatherHTML } from "./Weather.js";
 
 const eventHub = document.querySelector(".weatherContainer");
+eventHub.addEventListener("chosen", event => {
+    const zipCode = event.detail.parkZip;
+    weatherList(zipCode);
+});
 
 const render = (appWeather) => {
     const targetElement = document.querySelector(".weatherContainer");
@@ -10,12 +14,12 @@ const render = (appWeather) => {
         return WeatherHTML(weatherObj);
     })
     // console.log("HTMLArray", HTMLArray);
-    targetElement.innerHTML = HTMLArray.join("")
+    targetElement.innerHTML = HTMLArray.join("");
 };
 
 // Render weather forcast initally
-export const weatherList = () => {
-    getWeather()
+export const weatherList = (zipCode) => {
+    getWeather(zipCode)
         .then(() => {
             const weatherArray = useWeather();
             //console.log('weatherArray', weatherArray);
