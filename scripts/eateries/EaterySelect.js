@@ -2,7 +2,7 @@
 
 import { useEateries, getEateries } from "./EateryProvider.js"
 
-const eventHub = document.querySelector(".dropdown")
+const eventHub = document.querySelector(".dropdownContainer")
 const domElement = document.querySelector(".eateriesDrop")
 
 
