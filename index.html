@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamiltons</title>
+    <title>Hamiltons Van-Life Travel</title>
+    <!-- <link rel="stylesheet" href="css/flexboxgrid.css"> -->
     <link rel="stylesheet" href="./styles/main.css">
+   
 </head>
 
 <!-- HEADER -->
 <header>
-  <div>LOGO HERE</div>
+  <div class="logo">Van-Life-Logo</div>
 </header>
 
 <body>
-        <!-- BANNER IMAGE HERE -->
-    <div class="bannerImg"><img src="images/lakePhoto.jpg"  width="900" height="300" alt="calming lake nestled in green wooded mountains"></div>
+    
+    <!-- BANNER IMAGE HERE -->
+    <div><img src="images/lakePhoto.jpg"  width="80%" height="auto" alt="calming lake nestled in green wooded mountains"></div>
 
     <!-- HEADER SECTION -->
   
@@ -22,16 +25,17 @@
   <div class="dropdownTitle"><h2> START YOUR ADVENTURE</h2></div>
     <!-- DROPDOWN CONTAINER -->
     <section class="dropdownContainer">
-      <div class="statesDrop"></div>
-      <div class="parksDrop"></div>
-      <div class="eateriesDrop"></div>
-      <div class="attractionsDrop"></div>
-    </section>
+      <div class="stateDrop">State</div>
+      <div class="parksDrop">Park</div>
+      <div class="eateriesDrop">Eat</div>
+      <div class="attractionsDrop">Attraction</div>
+    </section> 
 
-    <!-- PREVIEW PARENT CONTAINER THAT HOLDS SMALLER COMPONENTS -->
-      <section class="mainContentContainer">
+    <!-- MAIN SECTION CONTENT (PARENT CONTAINER)-->
+    <div class="main-section">
 
-      <!-- PREVIEW CONTAINER -->
+      <!-- PREVIEW CONTAINER (CHILD)-->
+
         <section class="previewContainer">
           <h3>Adventure Plan</h3>
           <div class="parksPreview"></div>
@@ -39,23 +43,26 @@
           <div class="attractionsPreview"></div>
           <div class="weatherPreview"></div>
         </section>
+      
 
-      <!-- ASIDE BOX -->
+      <!-- ASIDE BOX (CHILD)-->
         <aside>
-          <div id="savedAdventuresContainer"></div>
+          <div id="savedAdventuresContainer">
           <h3>Saved Adventures</h3>
           <div class="adventureCard1"></div>
           <div class="adventureCard2"></div>
           <div class="adventureCard3"></div>
+        </div>
       </aside>
 
-    <!-- REVIEWS -->
-        <section class="reviews">REVIEW CONTAINER</section>
+    <!-- REVIEWS (CHILD)-->
+        <!-- <section class="reviews">REVIEW CONTAINER</section>
             <div class="review1">review 1</div>
             <div class="review2">review 2</div>
             <div class="review3">review 3</div>
             <div class="review4">review 4</div>
-    </section>
+    </section> -->
+  </div>
     
 <!-- BOTTOM BANNER -->
     <section class="bottomBanner">

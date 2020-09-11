@@ -1,6 +1,6 @@
-import { getParks, useParks } from "./ParkProvider.js";
+import { getParks, usePark } from "./ParkProvider.js";
 
-const eventHub = document.querySelector(".dropdown");
+const eventHub = document.querySelector(".dropdownContainer");
 const domElement = document.querySelector(".parksDrop")
 // const selectedTarget = document.querySelector(".parksPreview")
 // obv for preview stuff
@@ -32,7 +32,7 @@ const render = (parksCollection) => {
 export const ParkSelect = () => {
 	getParks()
 	.then(() => {
-		const parksList = useParks()
+		const parksList = usePark()
 		render(parksList)
 	});
 };

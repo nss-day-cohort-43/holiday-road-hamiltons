@@ -32,7 +32,6 @@ const render = (attractionCollection) =>{
         getAttractions()
         .then( () =>{
             const attractionList = useAttractions()
-            console.log(attractionList)
             render(attractionList)
         })
     }

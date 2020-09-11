@@ -57,3 +57,4 @@ let states = [
 export const theStates = () => {
     return states.slice();
 }
+console.log("the states", theStates);
