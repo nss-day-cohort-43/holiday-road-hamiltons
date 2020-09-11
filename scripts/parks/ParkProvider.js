@@ -1,4 +1,4 @@
-import {keys} from "../Settings.js";
+import { keys } from "../Settings.js";
 
 let parks = [];
 
