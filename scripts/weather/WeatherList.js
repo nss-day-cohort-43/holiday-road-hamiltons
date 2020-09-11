@@ -1,4 +1,4 @@
-import { getWeather, useWeather} from "./WeatherProvider.js";
+import { getWeather, useWeather } from "./WeatherProvider.js";
 import { WeatherHTML } from "./Weather.js";
 
 const eventHub = document.querySelector(".weatherContainer");
@@ -16,11 +16,11 @@ const render = (appWeather) => {
 // Render weather forcast initally
 export const weatherList = () => {
     getWeather()
-    .then(() => {
-        const weatherArray = useWeather();
-        //console.log('weatherArray', weatherArray);
-        render(weatherArray);
-    })
+        .then(() => {
+            const weatherArray = useWeather();
+            //console.log('weatherArray', weatherArray);
+            render(weatherArray);
+        })
 };
 
 eventHub.addEventListener("click", clickEvent => {
@@ -30,7 +30,7 @@ eventHub.addEventListener("click", clickEvent => {
 
         if (weatherContent.value !== "0") {
             const newforcast = {
-                
+
             }
         }
     }
