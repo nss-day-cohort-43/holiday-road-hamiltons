@@ -1,6 +1,3 @@
-
-
-
 export const ItineraryHTML = (obj) => {
   return `
   <section class="itinerary">
