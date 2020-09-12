@@ -1,14 +1,14 @@
-export const CriminalHTML = (criminalObj) => {
-	return `
-		<section id="officer-${criminalObj.id}" class="card-criminal">
-			<p><strong> ${criminalObj.name}</strong> 
-			<br>Age: ${criminalObj.age}
-      <br>Crime: ${criminalObj.conviction}
-      <br>Term start: ${new Date(criminalObj.incarceration.start).toLocaleDateString('en-US')}
-      <br>Term end: ${new Date(criminalObj.incarceration.end).toLocaleDateString('en-US')}
-      <br>
-			<p><button id="associates--${criminalObj.id}">🧑‍🤝‍🧑Suposed Alibi</button></p>
-			${AlibiDialog(criminalObj.id)}
-		</section>
-	`
+
+
+
+export const ItineraryHTML = (obj) => {
+  return `
+  <section class="itinerary">
+    <p class"card-title"> ${obj.park} Selected Itinerary}</p>
+      <ul class="itineraryPreviews">
+        <li> National Parks </li>
+        <li> Attractions </li> 
+        <li> Eateries </li> 
+      </ul>
+  `
 }

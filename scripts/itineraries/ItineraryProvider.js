@@ -5,6 +5,17 @@ export const useItineraries = () => {
 	return notes.slice();
 }
 
+
+export const getItineraries = () => {
+  return fetch("https://criminals.glassdale.us/criminals")
+  .then(response => response.json())
+      .then(parsedResponse => {
+              itineraries = parsedResponse
+          }
+      )
+}
+
+
 export const saveItinerary = Obj => {
 	return fetch("https://localhost:8088/notes", {
 		method: "POST",
@@ -13,8 +24,6 @@ export const saveItinerary = Obj => {
 		},
 		body: JSON.stringify(Obj)
 	})
-	.then(() => {
-		return getItineraries()
-	})
-    .then(dispatchStateChangeEvent)
+    .then(getItineraries)
+    .then(dispatchStateEvent)
 }
