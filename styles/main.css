@@ -225,34 +225,25 @@ footer {
         justify-content: center;
         background-color: darkgrey;
         padding: 20px;
-        margin: 20px;
+        margin: 20px 0px 0px 0px;
 }
 
-.github  {
+a  {
         text-align: center;
         width: 45px;
         height: 45px;
         padding: 10px 0px 0px 0px; 
         align-items: center;
 }
-.facebook  {
-        text-align: center;
-        width: 45px;
-        height: 45px;
-        padding: 10px 0px 0px 0px; 
-        align-items: center;
-}
-.twitter  {
-        text-align: center;
-        width: 45px;
-        height: 45px;
-        padding: 10px 0px 0px 0px; 
-        align-items: center;
-}
-.phone  {
-        text-align: center;
-        width: 45px;
-        height: 45px;
-        padding: 10px 0px 0px 0px; 
-        align-items: center;
+
+.copywrite {
+        display: flex;
+        background-color: #333;
+        color: black;
+        font-family: 'Asap', sans-serif;
+        justify-content: center;
+        height: 60px;
+        margin: 0;
+        padding: 20px 10px 0px 0px;
+
 }
