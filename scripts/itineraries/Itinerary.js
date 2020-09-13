@@ -3,9 +3,9 @@ export const ItineraryHTML = (obj) => {
   <section class="itinerary">
     <p class"card-title"> ${obj.park} Selected Itinerary}</p>
       <ul class="itineraryPreviews">
-        <li> National Parks </li>
-        <li> Attractions </li> 
-        <li> Eateries </li> 
+        <li> National Parks ${obj.park} </li>
+        <li> Eateries ${obj.attraction}</li> 
+        <li> Attractions ${obj.eatery}</li> 
       </ul>
   `
 }

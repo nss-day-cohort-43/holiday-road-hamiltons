@@ -9,7 +9,7 @@ const eventHub = document.querySelector(".previewContainer")
 const render = (itineraries) => {
     const itineraries = useItineraries()
     contentTarget.innerHTML = itineraries.map((obj) => {
-            return NoteHTMLConverter(obj)
+            return ItineraryHTMLConverter(obj)
         }).join("");
 }
 
