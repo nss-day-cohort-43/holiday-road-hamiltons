@@ -1,9 +1,9 @@
 
- /* header {
+ header {
         background-color: white;
         width: 900px;
         height: 50px;
- } */
+ } 
 
 
 img {
@@ -31,6 +31,9 @@ body {
 
 h2 {
         text-align: center; 
+        font-family: 'Lobster Two', cursive;
+        font-size: 40px;
+        padding:
  }
 
 h3 {
@@ -133,4 +136,8 @@ footer {
 
 
 
+/* Buttons */
 
+#saveButton {
+        
+}

@@ -30,7 +30,7 @@ export const getItineraries = () => {
 
 //declare, fetch and export function that uses getINT and dispatch functions
 export const saveItinerary = Obj => {
-	return fetch("https://localhost:8088/notes", {
+	return fetch("http://localhost:8088/itineraries", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json"
