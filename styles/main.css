@@ -298,6 +298,7 @@ body {
         opacity: .9;
 }
 
+<<<<<<< HEAD
 
  .bottomBanner {
          display: flex;
@@ -389,3 +390,12 @@ a  {
         padding: 20px 10px 0px 0px;
 
 }
+=======
+ /* .reviews {
+         display: flex;
+         flex-direction: column;
+         background-color: whitesmoke;
+         width: 500px;
+         height: 350px;
+ } */
+>>>>>>> master
