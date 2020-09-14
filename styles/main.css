@@ -1,41 +1,89 @@
 
- /* header {
-        background-color: white;
-        width: 900px;
-        height: 50px;
- } */
+
+ ul {
+        list-style-type: none;
+        font-size: 18px;
+        font-family: 'Asap', sans-serif;
+        margin: 20px;
+        padding: 15x;
+        overflow: hidden;
+        background-color: #333;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        
+      }
+      
+      li {
+        float: right;
+      }
+
+        .logo {
+        float: left;
+        width: 200px;
+        height: 70px;
+        padding: 10px 0px 0px 0px; 
+        align-items: center;
+      }
+      
+      li a {
+        display: inline-block;
+        color: white;
+        padding: 20px 0px 0px 0px;
+        margin: 10px;
+        text-decoration: none;
+      }
+
+      .trips {
+        padding: 0px 75px 0px 0px;
+      }
+      
+      li a:hover {
+        background-color: #111;
+      }
+
 
 
 img {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 0%;
         width: 90%;
 }
+
 
 
 body {
 	background-color: white;
 }
 
+
 .main-section {
         display: flex;
         flex-flow: wrap;
+        font-family: 'Asap', sans-serif;
         background-color: #F2F2F2;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         justify-content: center;
-
-
 }
 
 
-h2 {
-        text-align: center; 
+ h2 {
+        text-align: center;
+        font-family: 'Lobster Two', cursive;
+        font-size: 60px;
+        margin: 10px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        color: black;
+        text-shadow: 1px 1px 2px #000000;
+        
  }
+ 
 
 h3 {
         text-align: center;
 }
+
+
 
 
  .dropdownContainer {
@@ -43,69 +91,131 @@ h3 {
 	align-items: center;
         justify-content: center;
         background-color: whitesmoke;
-        height: 50px;
+        height: 65px;
         margin: 20px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 
 }
 
-        .dropdownContainer > div {
+        /* .dropdownContainer > div {
                 background-color:#478ac9;
                 width: 700px;
                 height: 20px;
                 text-align: center;
                 font-size: 20px;
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-        }
+        } */
 
+       
 
- .previewContainer {
+/* ITINERARY PREVIEW CONTAINER */
+
+.previewContainer {
         display: flex;
         flex-direction: column;
         background-color: lightgrey;
-        width: 500px;
-        height: 350px;
+        width: 400px;
+        height: 100%;
+        margin: 20px 40px 40px 40px;
+        padding: 40px 40px 40px 40px;
         justify-content: center;
- }
-        
-                .previewContainer > div {
-                background-color: #f1f1f1;
-                position: center;
-                width: 400px;
-                height: 30px;
-                margin: 10px;
-                padding: 10px;
-                text-align: center;
-                line-height: 30px;
-                font-size: 20px;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-                opacity: .9;
- }
-        
+}
 
- #savedAdventuresContainer {
+.parksPreview {
+        background-color: #f1f1f1;
+        position: center;
+        width: 360px;
+        height: 30px;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+        opacity: .9;
+}
+
+.attractionsPreview {
+        background-color: #f1f1f1;
+        position: center;
+        width: 360px;
+        height: 30px;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+        opacity: .9;
+}
+.eateriesPreview {
+        background-color: #f1f1f1;
+        position: center;
+        width: 360px;
+        height: 30px;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+        opacity: .9;
+}
+
+.weatherPreview {
+        background-color: #f1f1f1;
+        position: center;
+        width: 360px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+        opacity: .9;
+}
+.reviews {
+        background-color: #f1f1f1;
+        position: center;
+        width: 360px;
+        height: 275px;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+        opacity: .9;
+}
+
+
+
+/* SAVED ITINERARY CONTAINER */
+
+#savedAdventuresContainer {
         display: flex;
         flex-direction: column;
         background-color: #53adbb;
         width: 400px;
         height: 800px;
+        margin: 20px 0px 0px 0px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
         opacity: .8;
-        }
-        
-                #savedAdventuresContainer > div {
-                display: flex;
-                position: center;
-                background-color: #f1f1f1;
-                width: 350px;
-                height: 200px;
-                margin: 20px;
-                text-align: center;
-                line-height: 75px;
-                font-size: 20px;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-                opacity: .9;
- }
+}
+
+#savedAdventuresContainer > div {
+        display: flex;
+        background-color: #f1f1f1;
+        width: 360px;
+        height: 200px;
+        margin: 20px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+        opacity: .9;
+}
 
  /* .reviews {
          display: flex;
@@ -115,22 +225,91 @@ h3 {
          height: 350px;
  } */
 
+ .bottomBanner {
+         display: flex;
+         flex-direction: row;
 
-.bottomBanner {
-        background: black;
-        width: 100%;
-        height: 60px;
+ }
+
+
+
+
+
+                /* ---------------BUTTONS------------------ */
+
+#saveButton {
+        color: white;
+        background-color: #478ac9;
+        font-size: 15px;
+        width: 150px;
+        height: 40px;
+        border-radius: 5px;
+        margin: 10px;
+
+}
+
+#parkSelect {
+        color: white;
+        background-color: #478ac9;
+        font-size: 15px;
+        width: 160px;
+        height: 30px;
+        border-radius: 5px;
+        margin: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+        
         
 }
 
-footer {
-        background: darkgrey;
-        text-align: center;
-        width: 100%;
-        height: 40px;
-        padding: 10px;
+#attractionSelect {
+        color: white;
+        background-color: #478ac9;
+        font-size: 15px;
+        width: 160px;
+        height: 30px;
+        border-radius: 5px;
+        margin: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+        
+}
+#eaterySelect {
+        color: white;
+        background-color: #478ac9;
+        font-size: 14px;
+        width: 160px;
+        height: 30px;
+        border-radius: 5px;
+        margin: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+        
 }
 
+/* FOOTER */
 
+footer {
+        display: flex;
+        justify-content: center;
+        background-color: darkgrey;
+        padding: 20px;
+        margin: 20px 0px 0px 0px;
+}
 
+a  {
+        text-align: center;
+        width: 45px;
+        height: 45px;
+        padding: 10px 0px 0px 0px; 
+        align-items: center;
+}
 
+.copywrite {
+        display: flex;
+        background-color: #333;
+        color: black;
+        font-family: 'Asap', sans-serif;
+        justify-content: center;
+        height: 60px;
+        margin: 0;
+        padding: 20px 10px 0px 0px;
+
+}
