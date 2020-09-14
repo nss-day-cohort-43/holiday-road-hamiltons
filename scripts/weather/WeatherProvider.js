@@ -3,6 +3,14 @@ import { usePark } from "../parks/ParkProvider.js";
 
 let weather = [];
 
+const eventHub = document.querySelector(".weatherPreview");
+
+const dispatchStateChangeEvent = () => {
+    const weatherStateChangedEvent = new CustomEvent("weatherSaved");
+  
+    eventHub.dispatchEvent(weatherStateChangedEvent);
+  };
+  
 export const useWeather = () => {
     return weather.slice();
 };

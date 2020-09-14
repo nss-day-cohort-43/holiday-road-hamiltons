@@ -21,14 +21,20 @@ const render = (appWeather) => {
 // Render weather forcast initally
 export const weatherList = (zipCode) => {
     getWeather(zipCode)
-    let days = []
 
         .then(() => {
             const weatherArray = useWeather();
-
-            render(weatherArray);
+            return(weatherArray);
         })
-    return days;
+        .then((weatherArray) => {
+            const fiveDayForcast = weatherArray.filter(tacoReport => {
+                const weatherTime = tacoReport.dt_txt
+                if (weatherTime.includes("12:00:00")) {
+                    return weatherTime
+                }
+            })
+    return fiveDayForcast;
+        })
 };
 
 eventHub.addEventListener("click", clickEvent => {
