@@ -10,7 +10,7 @@ const dispatchStateChangeEvent = () => {
 };
 
 export const getItinerary = () => {
-    return fetch('http://localhost:8088/notes')
+    return fetch('')
         .then(response => response.json())
         .then(parsedNotes => {
             notes = parsedNotes
