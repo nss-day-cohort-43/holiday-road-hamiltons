@@ -7,7 +7,6 @@ const eventHub = document.querySelector(".dropdownContainer");
 
     eventHub.addEventListener("parkSelected", event => {
         const zipCode = event.detail.parkZip;
-        debugger
         weatherList(zipCode);
         console.log("parkSelect")
     })
