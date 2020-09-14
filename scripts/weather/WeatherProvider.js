@@ -5,21 +5,11 @@ let weather = [];
 
 const eventHub = document.querySelector(".weatherPreview");
 
-const dispatchStateChangeEvent = () => {
-    const weatherStateChangedEvent = new CustomEvent("weatherSaved");
-  
-    eventHub.dispatchEvent(weatherStateChangedEvent);
-  };
-  
 export const useWeather = () => {
     return weather.slice();
 };
 
 export const getWeather = (zipCode) => {
-    parks = usePark()
-    const parkTarget = parks.map(parkObj => {
-        return parkObj.name === document.querySelector(".parkPreview").value
-    })
 
     return fetch(`https://api.openweathermap.org/data/2.5/forecast?&units=imperial&zip=${zipCode}&appid=${keys.weatherKey}`)
         .then(response => response.json())
