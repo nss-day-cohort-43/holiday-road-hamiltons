@@ -10,7 +10,7 @@ export const getParks = () => {
     return fetch(`https://developer.nps.gov/api/v1/parks?stateCode=TN&stateCode=&api_key=${keys.npsKey}`)
         .then(response => response.json())
         .then(parsedParks => {
-            parks = parsedParks
+            parks = parsedParks.data // json result is an object so get the array out of the data property
         }
     )
 }
