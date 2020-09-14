@@ -1,5 +1,5 @@
 .title-box {
-        display: flex;
+        flex: 1em;
         position: top;
         text-align: center;
     }
@@ -7,7 +7,7 @@
       .title-text {
         background-size: cover;
         text-align: center;
-        font-size: 20px;
+        font-size: 1em;
         font-family: 'Noto Sans TC', sans-serif;
         color: white;
         position: absolute;
@@ -21,6 +21,7 @@
 
       .sub-title {
         text-align: center;
+        font-size: 1em;
       }
 
       h2 {
@@ -227,17 +228,17 @@ body {
 }
 
 .review1 {
-        width: 120px;
-        height: 80px;
+        width: 160px;
+        height: 90px;
         background: rgba(71, 138, 201, 0.8);
         box-shadow: 0px 4px 4px rgba(170, 169, 169, 0.25);
         border-radius: 6px;
-        margin: auto;
+        margin: 10px;
 }
 
 .review2 {
-        width: 180px;
-        height: 115px;
+        width: 160px;
+        height: 150px;
         background: rgba(71, 138, 201, 0.8);
         box-shadow: 0px 4px 4px rgba(170, 169, 169, 0.25);
         border-radius: 6px;
@@ -252,8 +253,8 @@ body {
 }
 
 .review3 {
-        width: 180px;
-        height: 115px;
+        width: 160px;
+        height: 150px;
         background: rgba(199, 199, 198, 0.6);
         box-shadow: 0px 4px 4px rgba(170, 169, 169, 0.25);
         border-radius: 6px;
@@ -261,8 +262,8 @@ body {
 }
 
 .review4 {
-        width: 120px;
-        height: 80px;
+        width: 160px;
+        height: 100px;
         background: rgba(71, 138, 201, 0.8);
         box-shadow: 0px 4px 4px rgba(170, 169, 169, 0.25);
         border-radius: 6px;
