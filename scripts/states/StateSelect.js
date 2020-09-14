@@ -1,5 +1,7 @@
 import { theStates } from "./StateProvider.js"
 
+let stateCollection = [];
+
 const eventHub = document.querySelector(".dropdownContainer")
 const domElement = document.querySelector(".stateDrop")
 
@@ -8,8 +10,13 @@ export const selectState = () => {
     domElement.innerHTML = `
     <select class="dropdownContainer" id="selectState">
         <option value="0">Select a State</option>
-    </select>
+        ${stateCollection.map(stateObj => {
+            return`<option value="${stateObj}">${stateObj}</option>`
+        }).join("")
+        }
+        </select>
     `
+
     const selectTarget = document.querySelector(".stateDrop")
     let stateHTMLRepresentation = "";
     const states = theStates()
@@ -19,7 +26,7 @@ export const selectState = () => {
 
 selectTarget.innerHTML += `
     ${stateHTMLRepresentation}
-`}
+`
 
 const state = (stateObj) => {
     return `<option value="${stateObj}">${stateObj}</option>`

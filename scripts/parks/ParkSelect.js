@@ -20,7 +20,7 @@ const render = (parksCollection) => {
 	domElement.innerHTML = `
 	<select class="parksDrop" id="parkSelect">
 	<option value="0">Select a park...</option>
-	${parkCollection.map(parksObject => {
+	${parksCollection.map(parksObject => {
 		return `<option value="${parksObject.name}">${parksObject.name}</option>`
 		
 	}).join("")
