@@ -3,7 +3,7 @@ import { usePark } from "../parks/ParkProvider.js";
 
 let weather = [];
 
-const eventHub = document.querySelector(".weatherPreview");
+const eventHub = document.querySelector(".dropdownContainer");
 
 export const useWeather = () => {
     return weather.slice();
@@ -14,7 +14,7 @@ export const getWeather = (zipCode) => {
     return fetch(`https://api.openweathermap.org/data/2.5/forecast?&units=imperial&zip=${zipCode}&appid=${keys.weatherKey}`)
         .then(response => response.json())
         .then(parsedWeather => {
-            weather = parsedWeather.list;
+            weather = parsedWeather.data;
         })
 };
 

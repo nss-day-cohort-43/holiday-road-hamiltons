@@ -17,9 +17,12 @@ eventHub.addEventListener("change", event => {
 	}
 })
 
-const getParkByName = (parkName) => {
-	
-	return 
+export const getParkByName = (parkName) => {
+	// getParks()
+	// .then(() => {
+	// 	const parkName = usePark()
+	// 	render(parkName)
+	// });
 };
 
 
