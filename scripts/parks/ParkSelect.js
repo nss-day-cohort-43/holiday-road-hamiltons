@@ -6,15 +6,22 @@ const domElement = document.querySelector(".parksDrop")
 // obv for preview stuff
 
 eventHub.addEventListener("change", event => {
-	if (event.target.id === "selectPark") {
+	if (event.target.id === "parkSelect") {
 		const customEvent = new CustomEvent("parkSelected", {
 			detail: {
-				parkThatWasSelected: event.target.value
+				parkThatWasSelected: event.target.value,
+				zipCodeOfParkSelected: getParkByName(event.target.value)
 			}
 		})		
 		eventHub.dispatchEvent(customEvent)
 	}
 })
+
+const getParkByName = (parkName) => {
+	
+	return 
+};
+
 
 const render = (parksCollection) => {
 	domElement.innerHTML = `

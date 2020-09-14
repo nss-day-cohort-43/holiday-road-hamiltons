@@ -1,13 +1,17 @@
 import { getWeather, useWeather } from "./WeatherProvider.js";
 import { WeatherHTML } from "./Weather.js";
 
-const eventHub = document.querySelector(".weatherPreview");
+const targetElement = document.querySelector(".weatherPreview");
+const eventHub = document.querySelector(".dropdownContainer");
 
-eventHub.addEventListener("chosenPark", event => {
-    const zipCode = event.detail.parkZip;
-    weatherList(zipCode);
-});
 
+    eventHub.addEventListener("parkSelected", event => {
+        const zipCode = event.detail.parkZip;
+        debugger
+        weatherList(zipCode);
+        console.log("parkSelect")
+    })
+    
 const render = (appWeather) => {
     const targetElement = document.querySelector(".weatherPreview")
 
@@ -36,36 +40,3 @@ export const weatherList = (zipCode) => {
     return fiveDayForcast;
         })
 };
-
-eventHub.addEventListener("click", clickEvent => {
-    if (clickEvent.target.id === "saveWeather") {
-        const weatherContent = new CustomEvent("parkSelected", {
-            detail: {
-                parkSelected: event.target.value
-            }
-        })
-
-        if (weatherContent.value !== "0") {
-            const newforcast = {
-
-            }
-        }
-    }
-});
-
-eventHub.addEventListener("change", event => {
-    if (event.target.id === "selectPark") {
-        const customEvent = new CustomEvent("parkSelected", {
-            detail: {
-                parkThatWasSelected: event.target.value
-            }
-        })
-        eventHub.dispatchEvent(customEvent)
-    }
-});
-
-// const eventHub = document.querySelector(".weatherContainer");
-// const dispatchChangeEvent = () => {
-//     const zipCodeChangedEvent = new CustomEvent("weatherChanged")
-//     eventHub.dispatchEvent(zipCodeChangedEvent)
-// };
