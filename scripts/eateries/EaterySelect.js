@@ -1,3 +1,5 @@
+
+
 import { useEateries, getEateries } from "./EateryProvider.js"
 import { eateriesPreviewPopulate } from "../itineraries/ItineraryList.js";
 
@@ -17,6 +19,7 @@ eventHub.addEventListener("change", event => {
 })
 
 const render = (eateryCollection) =>{
+    // eaterySelect and eaterySelected where the issue, throw me in the river
     domElement.innerHTML = `
         <select class="eateriesDrop" id="eaterySelect">
         <option value="0">Select an Eatery</option>
