@@ -35,8 +35,6 @@ const renderEateries = (itineraries) => {
         
 }
 
-
-
 export const parksItineraryList = () => {
     getItineraries()
         .then(useItineraries)
@@ -48,8 +46,6 @@ export const eateriesItineraryList = () => {
         .then(renderEateries)
 }
 
-
-
 export const parksPreviewPopulate = (event) => {
     console.log("parks preview populate")
     console.log(event)
@@ -58,7 +54,7 @@ export const parksPreviewPopulate = (event) => {
 export const eateriesPreviewPopulate = (event) => {
     console.log("eateries preview populate")
     console.log(event)   
-        eateriesContentTarget.innerHTML = event.detail.eateryThatWasSelected
+        eateriesContentTarget.innerHTML = event.detail.chosenEatery
 }
 
 

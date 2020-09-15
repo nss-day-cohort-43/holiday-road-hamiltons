@@ -5,8 +5,8 @@ const eventHub = document.querySelector(".dropdownContainer")
 const domElement = document.querySelector(".eateriesDrop")
 
 eventHub.addEventListener("change", event => {
-    if (event.target.id === "EaterySelected") {
-        const customEvent = new CustomEvent ("EaterySelected", {
+    if (event.target.id === "eaterySelect") {
+        const customEvent = new CustomEvent ("eaterySelected", {
             detail: {
                 chosenEatery: event.target.value
             }
@@ -28,7 +28,7 @@ const render = (eateryCollection) =>{
 `
 }
 
-export const eaterySelection = () => {
+export const EaterySelect = () => {
     getEateries()
     .then( () =>{
         const eateryList = useEateries()

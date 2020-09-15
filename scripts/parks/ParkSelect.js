@@ -3,8 +3,6 @@ import { parksPreviewPopulate } from "../itineraries/ItineraryList.js";
 
 const eventHub = document.querySelector(".dropdownContainer");
 const domElement = document.querySelector(".parksDrop");
-// const selectedTarget = document.querySelector(".parksPreview")
-// obv for preview stuff
 
 eventHub.addEventListener("change", event => {
 	if (event.target.id === "parkSelect") {
