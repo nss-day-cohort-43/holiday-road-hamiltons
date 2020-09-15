@@ -1,17 +1,19 @@
 //house the event listener function and the drop down menu for the Attraction API
 import { useAttractions, getAttractions } from "./AttractionProvider.js"
+import { attractionsPreviewPopulate } from "../itineraries/ItineraryList.js";
 
 const eventHub = document.querySelector(".dropdownContainer")
 const domElement = document.querySelector(".attractionsDrop")
 
-eventHub.addEventListener("change", e => {
-    if (e.target.id === "selectAttraction") {
+eventHub.addEventListener("change", event => {
+    if (event.target.id === "attractionSelect") {
         const customEvent = new CustomEvent ("attractionSelected", {
             detail: {
-                chosenAttraction: e.target.value
+                chosenAttraction: event.target.value
             }
         })
         eventHub.dispatchEvent(customEvent)
+        attractionsPreviewPopulate(customEvent)
     }
 })
 
