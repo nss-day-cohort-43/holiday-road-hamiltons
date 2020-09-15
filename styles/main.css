@@ -219,62 +219,23 @@ body {
         opacity: .9;
 }
 
-/* .reviewsTop {
-        display: flex;
-        flex-direction: row;
-        flex-flow: wrap;
-        justify-content: center;
 
+.starkey {
+        width: 150px;
+     
 }
-
-.review1 {
-        
-        font-size: 20px;
-        width: 160px;
-        height: 90px;
-        background: rgba(71, 138, 201, 0.8);
-        box-shadow: 0px 4px 4px rgba(170, 169, 169, 0.25);
-        border-radius: 6px;
-        margin: 10px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.9);
+.dani {
+        width: 150px;
+     
 }
-
-.review2 {
-        width: 160px;
-        height: 150px;
-        background: #2e689e;
-        box-shadow: 0px 4px 4px rgba(170, 169, 169, 0.25);
-        border-radius: 6px;
-        margin: 10px 10px 10px 10px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.9);
+.martin {
+        width: 150px;
+     
 }
-
-.reviewsBottom {
-        flex-direction: row;
-        flex-flow: wrap;
-        justify-items: center;
-        margin: 10x;
+.zach {
+        width: 150px;
+     
 }
-
-.review3 {
-        width: 160px;
-        height: 150px;
-        background: rgba(199, 199, 198, 0.6);
-        box-shadow: 0px 4px 4px rgba(170, 169, 169, 0.25);
-        border-radius: 6px;
-        margin: 10px 10px 10px 10px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.9);
-}
-
-.review4 {
-        width: 160px;
-        height: 100px;
-        background: rgba(71, 138, 201, 0.8);
-        box-shadow: 0px 4px 4px rgba(170, 169, 169, 0.25);
-        border-radius: 6px;
-        margin: 10px 10px 10px 10px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.9);
-} */
 
 
 
@@ -308,12 +269,11 @@ body {
  .bottomBanner {
          display: flex;
          flex-direction: row;
+         background-color: lightgrey;
+         justify-content: center;
+         margin: 10px;
 
  }
-
-
-
-
 
                 /* ---------------BUTTONS------------------ */
 
@@ -366,7 +326,6 @@ body {
 
 /* FOOTER */
 
-/* test test test */
 
 footer {
         display: flex;
@@ -395,3 +354,29 @@ a  {
         padding: 20px 10px 0px 0px;
 
 }
+
+.button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+.saveButton  {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
