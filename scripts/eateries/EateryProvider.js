@@ -1,3 +1,5 @@
+import { keys } from "../Settings.js";
+
 let eateries = [];
 
 export const useEateries = () => {

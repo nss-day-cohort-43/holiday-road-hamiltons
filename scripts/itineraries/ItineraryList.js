@@ -7,30 +7,61 @@
     //Upon selection, move that information into the save itinerary API
     //Display the saved itinerary info in the Saved box
     
-
-
-
 import { getItineraries, useItineraries } from "./ItineraryProvider.js";
 import { ItineraryHTML } from "./Itinerary.js";
 
 //access the preview container
 const eventHub = document.querySelector(".previewContainer")
 
+const parksContentTarget = document.querySelector(".parksPreview");
+const eateriesContentTarget = document.querySelector(".eateriesPreview");
 
 
-const render = (itineraries) => {
-    const itineraries = useItineraries()
-    contentTarget.innerHTML = itineraries.map((obj) => {
+
+const renderParks = (itineraries) => {
+    // console.log("renderparkstuff")
+    const itinerariesCopy = useItineraries()
+    parksContentTarget.innerHTML = itineraries.map((obj) => {   
             return ItineraryHTMLConverter(obj)
         }).join("");
+        
+}
+const renderEateries = (itineraries) => {
+    // console.log("rendereateriestuff")
+    const itinerariesCopy = useItineraries()
+    eateriesContentTarget.innerHTML = itineraries.map((obj) => {
+            return ItineraryHTMLConverter(obj)
+        }).join("");
+        
 }
 
 
-export const ItineraryList = () => {
+
+export const parksItineraryList = () => {
     getItineraries()
         .then(useItineraries)
-        .then(render)
+        .then(renderParks)
 }
+export const eateriesItineraryList = () => {
+    getItineraries()
+        .then(useItineraries)
+        .then(renderEateries)
+}
+
+
+
+export const parksPreviewPopulate = (event) => {
+    console.log("parks preview populate")
+    console.log(event)
+        parksContentTarget.innerHTML = event.detail.parkThatWasSelected
+}
+export const eateriesPreviewPopulate = (event) => {
+    console.log("eateries preview populate")
+    console.log(event)   
+        eateriesContentTarget.innerHTML = event.detail.eateryThatWasSelected
+}
+
+
 
 
 eventHub.addEventListener("itinerarySaved", () => {	

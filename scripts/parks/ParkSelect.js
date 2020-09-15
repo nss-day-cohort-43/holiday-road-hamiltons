@@ -1,4 +1,5 @@
 import { getParks, usePark } from "./ParkProvider.js";
+import { parksPreviewPopulate } from "../itineraries/ItineraryList.js";
 
 const eventHub = document.querySelector(".dropdownContainer");
 const domElement = document.querySelector(".parksDrop");
@@ -12,8 +13,9 @@ eventHub.addEventListener("change", event => {
 				parkThatWasSelected: event.target.value,
 				zipCodeOfParkSelected: getParkByName(event.target.value)
 			}
-		})		
+		})	
 		eventHub.dispatchEvent(customEvent)
+		parksPreviewPopulate(customEvent)
 	}
 })
 
@@ -24,10 +26,10 @@ const getParkByName = (parkName) => {
 
 const render = (parksCollection) => {
 	domElement.innerHTML = `
-	<select class="parksDrop" id="parkSelect">
-	<option value="0">Select a park...</option>
-	${parksCollection.map(parksObject => {
-		return `<option value="${parksObject.name}">${parksObject.name}</option>`
+		<select class="parksDrop" id="parkSelect">
+		<option value="0">Select a park...</option>
+		${parksCollection.map(parksObject => {
+			return `<option value="${parksObject.name}">${parksObject.name}</option>`
 		
 	}).join("")
 }
