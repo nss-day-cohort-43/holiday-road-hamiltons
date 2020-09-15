@@ -7,16 +7,13 @@
     //Upon selection, move that information into the save itinerary API
     //Display the saved itinerary info in the Saved box
     
-
-
-
 import { getItineraries, useItineraries } from "./ItineraryProvider.js";
 import { ItineraryHTML } from "./Itinerary.js";
+import { parkHTML } from "../Parks.js";
 
 //access the preview container
 const eventHub = document.querySelector(".previewContainer")
-
-
+const contentTarget = document.querySelector(".parksPreview");
 
 const render = (itineraries) => {
     const itineraries = useItineraries()
@@ -25,12 +22,20 @@ const render = (itineraries) => {
         }).join("");
 }
 
-
 export const ItineraryList = () => {
     getItineraries()
         .then(useItineraries)
         .then(render)
 }
+
+export const parksPreviewPopulate = () => {
+    eventHub.addEventListener("parkSelected", clickEvent => {
+        contentTarget.innerHTML += parkHTML
+        
+    })
+}
+
+
 
 
 eventHub.addEventListener("itinerarySaved", () => {	
