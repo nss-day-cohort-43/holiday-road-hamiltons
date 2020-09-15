@@ -220,6 +220,24 @@ body {
 }
 
 
+.starkey {
+        width: 150px;
+     
+}
+.dani {
+        width: 150px;
+     
+}
+.martin {
+        width: 150px;
+     
+}
+.zach {
+        width: 150px;
+     
+}
+
+
 
 /* SAVED ITINERARY CONTAINER */
 
@@ -336,3 +354,29 @@ a  {
         padding: 20px 10px 0px 0px;
 
 }
+
+.button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+.saveButton  {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
