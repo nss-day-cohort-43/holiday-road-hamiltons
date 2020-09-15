@@ -13,7 +13,7 @@
         position: absolute;
         border: solid white 3px;
         padding: 5px 10px;
-        top: 35%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
         opacity: .9;
@@ -70,7 +70,7 @@ h3 {
       li a {
         display: inline-block;
         color: white;
-        padding: 20px 0px 0px 0px;
+        padding: 20px 20px 0px 20px;
         margin: 10px;
         text-decoration: none;
       }
@@ -142,7 +142,7 @@ body {
         display: flex;
         flex-direction: column;
         background-color: lightgrey;
-        width: 400px;
+        width: 600px;
         height: 100%;
         margin: 20px 40px 40px 40px;
         padding: 40px 40px 40px 40px;
@@ -153,7 +153,7 @@ body {
 .parksPreview {
         background-color: #f1f1f1;
         position: center;
-        width: 360px;
+        width: 550px;
         height: 30px;
         margin: 10px;
         padding: 10px;
@@ -167,7 +167,7 @@ body {
 .attractionsPreview {
         background-color: #f1f1f1;
         position: center;
-        width: 360px;
+        width: 550px;
         height: 30px;
         margin: 10px;
         padding: 10px;
@@ -180,7 +180,7 @@ body {
 .eateriesPreview {
         background-color: #f1f1f1;
         position: center;
-        width: 360px;
+        width: 550px;
         height: 30px;
         margin: 10px;
         padding: 10px;
@@ -194,7 +194,7 @@ body {
 .weatherPreview {
         background-color: #f1f1f1;
         position: center;
-        width: 360px;
+        width: 550px;
         height: 100px;
         margin: 10px;
         padding: 10px;
@@ -204,22 +204,22 @@ body {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
         opacity: .9;
 }
-.reviewsContainer {
+.previewDisplay {
         display: flex;
         background-color: darkgrey;
         position: center;
-        width: 360px;
+        width: 550px;
         height: 275px;
         margin: 10px;
         padding: 10px;
         text-align: center;
-        line-height: 30px;
+        line-height: 25px;
         font-size: 20px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.9);
         opacity: .9;
 }
 
-.reviewsTop {
+/* .reviewsTop {
         display: flex;
         flex-direction: row;
         flex-flow: wrap;
@@ -228,21 +228,25 @@ body {
 }
 
 .review1 {
+        
+        font-size: 20px;
         width: 160px;
         height: 90px;
         background: rgba(71, 138, 201, 0.8);
         box-shadow: 0px 4px 4px rgba(170, 169, 169, 0.25);
         border-radius: 6px;
         margin: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.9);
 }
 
 .review2 {
         width: 160px;
         height: 150px;
-        background: rgba(71, 138, 201, 0.8);
+        background: #2e689e;
         box-shadow: 0px 4px 4px rgba(170, 169, 169, 0.25);
         border-radius: 6px;
         margin: 10px 10px 10px 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.9);
 }
 
 .reviewsBottom {
@@ -259,6 +263,7 @@ body {
         box-shadow: 0px 4px 4px rgba(170, 169, 169, 0.25);
         border-radius: 6px;
         margin: 10px 10px 10px 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.9);
 }
 
 .review4 {
@@ -268,7 +273,8 @@ body {
         box-shadow: 0px 4px 4px rgba(170, 169, 169, 0.25);
         border-radius: 6px;
         margin: 10px 10px 10px 10px;
-}
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.9);
+} */
 
 
 
@@ -298,10 +304,94 @@ body {
         opacity: .9;
 }
 
- /* .reviews {
+
+ .bottomBanner {
          display: flex;
-         flex-direction: column;
-         background-color: whitesmoke;
-         width: 500px;
-         height: 350px;
- } */
+         flex-direction: row;
+
+ }
+
+
+
+
+
+                /* ---------------BUTTONS------------------ */
+
+#saveButton {
+        color: white;
+        background-color: #478ac9;
+        font-size: 15px;
+        width: 150px;
+        height: 40px;
+        border-radius: 5px;
+        margin: 10px;
+
+}
+
+#parkSelect {
+        color: white;
+        background-color: #478ac9;
+        font-size: 15px;
+        width: 160px;
+        height: 30px;
+        border-radius: 5px;
+        margin: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+        
+        
+}
+
+#attractionSelect {
+        color: white;
+        background-color: #478ac9;
+        font-size: 15px;
+        width: 160px;
+        height: 30px;
+        border-radius: 5px;
+        margin: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+        
+}
+#eaterySelect {
+        color: white;
+        background-color: #478ac9;
+        font-size: 14px;
+        width: 160px;
+        height: 30px;
+        border-radius: 5px;
+        margin: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+        
+}
+
+/* FOOTER */
+
+/* test test test */
+
+footer {
+        display: flex;
+        justify-content: center;
+        background-color: darkgrey;
+        padding: 20px;
+        margin: 20px 0px 0px 0px;
+}
+
+a  {
+        text-align: center;
+        width: 45px;
+        height: 45px;
+        padding: 10px 0px 0px 0px; 
+        align-items: center;
+}
+
+.copywrite {
+        display: flex;
+        background-color: #333;
+        color: black;
+        font-family: 'Asap', sans-serif;
+        justify-content: center;
+        height: 60px;
+        margin: 0;
+        padding: 20px 10px 0px 0px;
+
+}
