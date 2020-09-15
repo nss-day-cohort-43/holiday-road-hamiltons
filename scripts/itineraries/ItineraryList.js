@@ -15,6 +15,7 @@ const eventHub = document.querySelector(".previewContainer")
 
 const parksContentTarget = document.querySelector(".parksPreview");
 const eateriesContentTarget = document.querySelector(".eateriesPreview");
+const attractionsContentTarget = document.querySelector(".attractionsPreview");
 
 
 
@@ -34,6 +35,16 @@ const renderEateries = (itineraries) => {
         }).join("");
         
 }
+const renderAttractions = (itineraries) => {
+    // console.log("rendereateriestuff")
+    const itinerariesCopy = useItineraries()
+    eateriesContentTarget.innerHTML = itineraries.map((obj) => {
+            return ItineraryHTMLConverter(obj)
+        }).join("");
+        
+}
+
+
 
 export const parksItineraryList = () => {
     getItineraries()
@@ -45,6 +56,14 @@ export const eateriesItineraryList = () => {
         .then(useItineraries)
         .then(renderEateries)
 }
+export const attractionItineraryList = () => {
+    getItineraries()
+        .then(useItineraries)
+        .then(renderAttractions)
+}
+
+
+
 
 export const parksPreviewPopulate = (event) => {
     console.log("parks preview populate")
@@ -55,6 +74,11 @@ export const eateriesPreviewPopulate = (event) => {
     console.log("eateries preview populate")
     console.log(event)   
         eateriesContentTarget.innerHTML = event.detail.chosenEatery
+}
+export const attractionsPreviewPopulate = (event) => {
+    console.log("attractions preview populate")
+    console.log(event)   
+        attractionsContentTarget.innerHTML = event.detail.chosenAttraction
 }
 
 
