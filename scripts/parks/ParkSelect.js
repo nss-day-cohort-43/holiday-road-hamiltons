@@ -1,7 +1,7 @@
 import { getParks, usePark } from "./ParkProvider.js";
 
 const eventHub = document.querySelector(".dropdownContainer");
-const domElement = document.querySelector(".parksDrop")
+const domElement = document.querySelector(".parksDrop");
 // const selectedTarget = document.querySelector(".parksPreview")
 // obv for preview stuff
 
@@ -22,7 +22,6 @@ const getParkByName = (parkName) => {
 	return 
 };
 
-
 const render = (parksCollection) => {
 	domElement.innerHTML = `
 	<select class="parksDrop" id="parkSelect">
@@ -34,7 +33,7 @@ const render = (parksCollection) => {
 }
 </select>
 `
-}
+};
 
 export const ParkSelect = () => {
 	getParks()
